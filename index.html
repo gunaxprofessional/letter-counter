@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guna</title>
+
+    <style>
+body{
+    background-color: rgb(218, 67, 67);
+}
+
+.container-fluid {
+    margin: auto;
+    margin-top: 10%;
+    width: 60%;
+    padding: 10px;   
+}
+
+.container-fluid  h1{
+    margin-left: 2%;
+    font-weight: 900;
+    color: rgb(73, 20, 20);  
+    white-space: nowrap; 
+}
+
+.borders{
+    display: inline-block;
+    border: 3px solid #ffffff;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+input{
+    background-color: aliceblue;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    padding: 5px;
+}
+b{
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-size: 20px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container-fluid {
+        margin: 10%;
+        margin-top: 10%;
+        width: 50%;
+        padding: 10px;    
+    }
+
+    .container-fluid  h1{
+        white-space: nowrap;
+        font-size: 30px;
+        margin-right: 3px;
+        font-weight: 900;
+        color: rgb(73, 20, 20);   
+    }
+    b{
+        white-space: nowrap;
+    }
+
+    .borders{
+        display: inline-block;
+        border: 3px solid #ffffff;
+        padding: 5%;
+        margin: auto;
+
+    }
+  }        
+    </style>
+    <script >
+        function count(str) {
+	             var leng = str.length;
+	             document.getElementById("op").innerHTML = leng;
+                 }
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="borders">
+            <h1> <u>LETTER-COUNT</u> </h1> <br>
+            <div class="main"></div>
+            <input type="text" name="input" onkeyup="count(this.value)" id="input" style="margin-left: 10%;"> <br> <br>
+            <b style="margin: 0% 0 0 10%;">Letter Count:- <span id="op">00</span> </b>
+        </div>
+    </div>
+</body>
+
+</html>
